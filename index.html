@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- this links html file to css and bootstrap-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>    
     
     <title>Leslie Mohan New Portfolio</title>
 
@@ -20,8 +22,20 @@
 
             <div class="square" id="sq1">D</div>
             <div class="square" id="sq2">L</div>  
-            <div class="square" id="sq3">M</div>  <div class="square" id="sq4">D</div>
-            <div class="design">design Inc</div>                    
+            <div class="square" id="sq3">M</div>  
+            <div class="square" id="sq4">D</div>
+
+            <div class="design">esign Inc</div>
+            <div id="box1">
+                <div class="boxtext">
+                    <div id='home'>Home</div>  
+                    <div id='about'>About</div>
+                    <div id='projects'>Projects</div>
+                </div>
+            </div>
+            <div class="box2">
+                <div id="box2text">  dlmdesigninc@gmail.com</div>
+            </div>
             
     </div>
     <div class="subSection">
@@ -41,7 +55,7 @@
                     
             <div class="main-bio">     
                 
-                    <p>When the colour of the night/ And all the smoke for one life/Gives way to shaky movements,/
+                    <p id="bio">When the colour of the night/ And all the smoke for one life/Gives way to shaky movements,/
                     Improvisational skills,/ A forest of whispering speakers/ Let’s swear that we will/
                     Get with the times,/ In a current health to stay/ let's get friendship right/
                     Get life day-to-day/ In the forget-yer-skates dream/ Full of countervailing woes/
@@ -51,48 +65,64 @@
                     Grow somewhere were needed……..The Tragically Hip.... from 'It's a Good Life If You Don't Weaken'</p>
         
                     </div>
+
     </div>
+
     <div class="subSection">
-        <h3>Portfolio</h3>
+        <h1 class="title">Leslie Mohan</h1>
+            
+        <h2 id="creds">BArch, OAA</h2>
     </div>
+
 
     <div class="sect sectThree">
+
+            <h4>WORD GUESS<br>GAME 
+            </h4>
+
+            <div class="main-carousel" data-flickity = '{ "cellAlign": "left", "contain": true }'>
+
+                    <div class="carousel-cellW1">
+                    </div>
+
+                    <div class="carousel-cellW2" id="wordOutline">
+
+                        <p>This Word Guess Game 
+                        is based on the traditional hangman game.  A unknown random word will be presented to user.  User will guess letters by pressing keyboard until word is correctly guessed or user's 9 attempts run out and the snowman is gone!</p>
+
+                    </div>
+            
+    
+                    <div class="carousel-cellW3">
+                        <a class = "titles" href="https://lesliemohan.github.io/WordGuessGame/">
+                    </div>
+
+            </div>
         
-        <div class='blueSquare'></div>
-        <h4>Word Guess Game</h4>
-        <p id="wordOutline"></p>
-
-        <div class='blueSquare'></div>
-        <h4>Game</h4>
-        <p id="Outline"></p>
-
-        <div class='blueSquare'></div>
-        <h4>Game</h4>
-        <p id="Outline"></p>
-
-        <div class='blueSquare'></div>
-        <h4>Game</h4>
-        <p id="Outline"></p>
-
-        <div class='blueSquare'></div>
-        <h4>Game</h4>
-        <p id="Outline"></p>
-
-        <div class='blueSquare'></div>
-        <h4>Game</h4>
-        <p id="Outline"></p>
-
     </div>
+
 
     <div class="subSection">
-        
     </div>
+
 
     <div class="sect sectFour">
 
-        <div class='blueSquare2'></div>
-        <h4>Crystal Game</h4>
-        <p id="crystalOutline"></p>
+        <div class='portContainer'>
+
+        <div class='portSq' id="guess">
+        </div>
+        <div class='portSq' id="guessOutline">
+            Word Guess Game
+
+        </div>
+        <div class='portSq' id="crystal"></div>
+        <div class='portSq' id="">
+        </div>
+        <div class='portSq' id="trivia"></div>
+        
+        </div>
+        
 
     </div>
 
@@ -100,12 +130,30 @@
         
     </div>
 
+
     <div class="sect sectFive">
 
-        <div class='blueSquare3'></div>
-        <h4>Trivia Game</h4>
-        <p id="triviaOutline"></p>
+                <h4>CRYSTAL COLLECTOR<br>GAME 
+                </h4>
 
+            <div class="main-carousel"          data-flickity>
+
+                    <div class="carousel-cellC1">
+                    </div>
+
+                    <div class="carousel-cellC2" id="crystalOutline">
+
+                        <p>In the Crystal Collector, the user presses the snowflake buttons of unknown value to try and match the target number shown without going over.</p>
+
+                    </div>
+            
+    
+                    <div class="carousel-cellC3">
+                        <a href=" https://lesliemohan.github.io/unit-4-game/">
+                    </div>
+           
+            </div>
+        
     </div>
 
 
@@ -116,7 +164,11 @@
 
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JavaScript -->
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script src="assets/javascript/app.js"></script>
 
     
