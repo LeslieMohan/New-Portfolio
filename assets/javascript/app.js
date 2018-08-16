@@ -16,10 +16,10 @@ $(window).scroll(function() {
     
     });*/
 
-    $('#sq4').css({
+    /*$('#sq4').css({
         'transform': 'translate(0px, '+ wScroll /1 +'%)'
     
-    });
+    });*/
     
     /*$('').css({
         'transform': 'translate(0px, '+ wScroll /2 +'%)'
@@ -38,7 +38,7 @@ $(window).scroll(function() {
 
     }
 
-    else if (wScroll >= 351) {
+    else if (wScroll >= 351 && wScroll <= 1063) {
         setTimeout(function(){
             $('#bio-image').fadeIn();
         }), 300;
@@ -66,7 +66,7 @@ $(window).scroll(function() {
             
         };*/
 
-    if (wScroll > $('.main-carousel').offset().top-500) {
+    if (wScroll > $('.project-main').offset().top-500) {
             setTimeout(function(){
                 $('h4').addClass('show');
             }), 180
@@ -74,15 +74,9 @@ $(window).scroll(function() {
         };
 
 
-    if (wScroll > $('.portContainer').offset().top-500) {
-        $('.portSq').each(function(i){ 
-                console.log('hello');
-            setTimeout(function(){
-                $('.portSq').eq(i).addClass('show');
-            }, 180 * (i+1));
-            
-        });
-    };
+    
+
+    
 
     
     

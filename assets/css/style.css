@@ -32,21 +32,20 @@ h4 {
     font-family: 'SansSerifBldFLF-Italic', Italic, Arial Narrow, Franklin Gothic Medium,  Arial, sans-serif;
     position: relative;
     left: 20%;
-    top: 20%;
+    top: 30%;
     vertical-align: middle;
     padding: 0;
     margin: 0;
     animation-name: bioImagefade-down;
     animation-duration: 3s;
-    
-    
     z-index: 5;
+    color: white;
 
 }
 
-#line {
+/*#line {
     color: lightblue;
-}
+}*/
 
 .square {
     position: relative;
@@ -527,6 +526,7 @@ h4 {
     
 }
 
+
 .sect {
     align-content: center;
     height: 85%;
@@ -543,8 +543,6 @@ h4 {
     
     height: 15%;
     background-color: black;
-    /*border-top: solid lightblue 2px;
-    border-bottom: solid lightblue 2px;*/
     z-index: 5;
     
 }
@@ -570,11 +568,7 @@ h4 {
 }
 
 .sectFour {
-    margin: 0;
-    height: 170%;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+   
     background: linear-gradient(black, grey);
 
 }
@@ -587,78 +581,33 @@ h4 {
     
 }
 
-#word {
-    border: solid red 3px;
-    width: 350px;
-    height: 350px;
-    display: inline-block;
-    vertical-align: middle;
+.sectSix {
+   
+    background: linear-gradient(black, grey);
 
 }
 
-#wordGuess {
-    border: solid red 3px;
-    width: 350px;
-    height: 350px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-
-/* position dots up a bit */
-.flickity-page-dots {
-    bottom: -22px;
-  }
-  /* dots are lines */
-  .flickity-page-dots .dot {
-    height: 3px;
-    width: 40px;
-    margin: 0;
-    border-radius: 0;
-  }
-
-.main-carousel {
+.project-main {
     width: 50%;
     height: 55%;
     align-content: center;
     background-size: cover;
-    background-repeat: no-repeat;counter-increment: carousel-cell;
+    background-repeat: no-repeat;
     margin: auto;
     transform: translateX(-30px);
     transition: all 0.6s ease-in-out;
     
 }
 
-.carousel-cellW1 {
+.project-WG1 {
     width: 100%;
     height: 100%;
     vertical-align: middle;
     background-image: url("../../images/floatletters.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    counter-increment: carousel-cell;
     margin: auto;
-
-}
-
-
-.carousel-cellW2 {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    background-size: cover;
-    background-repeat: no-repeat;counter-increment: carousel-cell;
-    margin: auto;
-
-}
-
-#wordOutline {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    background-size: cover;
-    background-repeat: no-repeat;counter-increment: carousel-cell;
-    margin: auto;
+    color: black;
 
 }
 
@@ -666,49 +615,153 @@ p {
     width: 40%;
     position: relative;
     left: 45%;
-    margin-top: 70px;
+    margin: 60px 0 0 0;
+    padding: 80px;
+    font-family: 'SansSerifFLF', Arial Narrow, Franklin Gothic Medium,  Arial, sans-serif;
 }
 
-.carousel-cellW3 {
-    width: 100%;
-    height: 100%;
+.line {
+    width: 300px;
+    height: 8px;
+    color: red;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.project-WG2 {
+    width: 60px;
+    height: 60px;
     vertical-align: middle;
-    background-image: url("../../images/Word.png");
+    background-image: url("../../images/snowman.png");
     background-size: cover;
-    background-repeat: no-repeat;counter-increment: carousel-cell;
+    background-repeat: no-repeat;
     margin: auto;
+    z-index: 10;
+    
+
 
 }
-.carousel-cellC1 {
+.project-CC1 {
     width: 100%;
     height: 100%;
     vertical-align: middle;
     background-image: url("../../images/sfbackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    counter-increment: carousel-cell;
+    margin: auto;
+    color: white;
+}
+
+.project-CC2 {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    background-image: url("../../images/sfcrystal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: auto;
 
 }
 
-.carousel-cellC2 {
+.project-TG1 {
     width: 100%;
     height: 100%;
     vertical-align: middle;
+    
     background-size: cover;
-    background-repeat: no-repeat;counter-increment: carousel-cell;
+    background-repeat: no-repeat;
+    margin: auto;
+    color: white;
+}
+
+#TGphoto {
+    background-image: url("../../images/topten2:2.jpg");
+    opacity: 0.7;
+}
+
+
+
+.project-TG2 {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    background-image: url("../../images/trivia.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: auto;
 
 }
 
-.carousel-cellC3 {
+.project-FF1 {
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    background-image: url("../../images/crystalGame.jpg");
+    background-image: url("../../images/friendships3.jpg");
+    background-color: dimgray;
+    background-blend-mode: overlay;
     background-size: cover;
-    background-repeat: no-repeat;counter-increment: carousel-cell;
+    background-repeat: no-repeat;
+    margin: auto;
+    color: white;
+}
+
+
+
+.project-FF2 {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    background-image: url("../../images/friendsInCar2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: auto;
 
 }
+
+
+
+.outer-grid {
+    position: relative;
+    left: 40%;
+    width: 20%;
+    padding-bottom: 20%;
+    /*border: 1px solid gray;*/
+    background-color: transparent;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .outer-square {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 90%;
+    background-color: #ccc;
+    margin: 5%;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .inner-grid {
+    width: 33.3%;
+    height: 33.3%;
+    border: 1px solid red;
+    display: table;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .inner-square {
+    line-height: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
 
