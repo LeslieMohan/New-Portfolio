@@ -1,8 +1,10 @@
-*{
+*{ 
     margin: 0;
 }
 html, body {
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /*h1 {
@@ -185,7 +187,8 @@ h4 {
     font-family: 'SansSerifFLF', Arial Narrow, Franklin Gothic Medium,  Arial, sans-serif;
     transform:  translateX(-30%) translateY(-110%) rotate(-180deg);
 }
-#home #about #projects{
+
+#about, #projects {
     display: none;
 }
 
@@ -372,23 +375,42 @@ h4 {
     background-position: center;
 }*/
 
+#photo {
+    width: 80px;
+    height: 80px;
+    /* border: solid black 3px; */
+    /*margin: auto;*/
+    /*top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    background-image: url("../../images/LeslieBW.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 47%;
+    top: 25%;
+    z-index:10;
+    /* border: double rgb(30, 30, 30) .5px; */
+    /* box-shadow: 0 0 10px rgba(250, 250, 250, 1.0) ; */
 
+}
 
-#bio-image {
-    /*position: relative;
-    float: left;*/
-    top: 30%;
+/*#bio-image {
+    position: relative;
+    float: left;
+    top: 30%; 
     justify-content: center;
     margin: 0;
     display: none;
     width: 150px;
     height: 199px;
     border-style: solid;
-    /*animation-name: bioImagefade-down;
+    animation-name: bioImagefade-down;
     animation-duration: 3s;
-    animation-fill-mode: forwards;*/
+    animation-fill-mode: forwards;
     
-}
+}*/
 
 @keyframes bioImagefade-down {
     0% {
@@ -402,25 +424,41 @@ h4 {
  } 
 
 
-.main-bio #bio {
-    justify-content: center;
-    background-color: #ffffff;
-    padding: 34px;
+.main-bio  {
     width: 100%;
-    max-width:  500px;
+    height: 55%;
+    margin: auto;
+   
+    
+    justify-content: center;
+    
+    
+    /*max-width:  500px;*/
     position: relative;
-    left: 0%;
-    top: 100px;
-    font-family: 'SansSerifFLF', Arial Narrow, Franklin Gothic Medium,  Arial, sans-serif;
-    background-color: transparent;
+    left: 31%;
+    top: 120px;
+    
     /*animation-duration: 4s;*/
     /*animation-delay: 4s;*/
-    animation: main-bioZoom-in 1s ease 3s forwards;
+    /* animation: main-bioZoom-in 1s ease 3s forwards; */
+    
+    
+   
+}
+
+#bio {
+    position: relative;
+    left: 0;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 0;
+    font-family: 'SansSerifFLF', Arial Narrow, Franklin Gothic Medium,  Arial, sans-serif;
+    background-color: transparent;
     font-weight: 5;
     font-size: 18px;
-    display: block;
     line-height: 1.25; 
     color: lightgrey;
+    
 }
 
 @keyframes  main-bioZoom-in{
@@ -547,6 +585,8 @@ h4 {
     
 }
 
+
+
 .sectOne {
     background: linear-gradient(grey, black);
 }
@@ -555,9 +595,11 @@ h4 {
     font-size: 12px;
     background-image: url("../../images/architect.jpg"),linear-gradient(grey, black) ;
     background-blend-mode: overlay;
-    display:flex;
+    /*display:flex;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:center;*/
+    
+    
 
 }
 
@@ -569,7 +611,7 @@ h4 {
 
 .sectFour {
    
-    background: linear-gradient(black, grey);
+    background: linear-gradient(grey, black);
 
 }
 
@@ -583,7 +625,24 @@ h4 {
 
 .sectSix {
    
-    background: linear-gradient(black, grey);
+    background: linear-gradient(grey, black);
+
+}
+
+.sectSeven {
+   
+    background: linear-gradient(grey, black);
+
+}
+.sectEight {
+   
+    background: linear-gradient(grey, black);
+
+}
+
+.sectNine {
+   
+    background: linear-gradient(grey, black);
 
 }
 
@@ -596,6 +655,7 @@ h4 {
     margin: auto;
     transform: translateX(-30px);
     transition: all 0.6s ease-in-out;
+   
     
 }
 
@@ -608,7 +668,7 @@ h4 {
     background-repeat: no-repeat;
     margin: auto;
     color: black;
-
+    
 }
 
 p {
@@ -621,27 +681,39 @@ p {
 }
 
 .line {
-    width: 300px;
-    height: 8px;
-    color: red;
+    position: absolute;
+    left: 45%;
+    top: 55%;
+    width: 450px;
+    /* height: 5px; */
+    border: solid white 1px;
     margin: 0;
     padding: 0;
-    z-index: 10;
+    z-index: 20;
 }
+
+
 
 .project-WG2 {
     width: 60px;
     height: 60px;
-    vertical-align: middle;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    z-index: 10;
     background-image: url("../../images/snowman.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
-    z-index: 10;
-    
-
+    display: block;
 
 }
+
+.project-WG2:hover {
+    box-shadow: inset 0 0 10px black;
+}
+
+
 .project-CC1 {
     width: 100%;
     height: 100%;
@@ -656,12 +728,20 @@ p {
 .project-CC2 {
     width: 60px;
     height: 60px;
-    vertical-align: middle;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    /* vertical-align: middle; */
     background-image: url("../../images/sfcrystal.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
+    z-index: 10;
+    display: block;
 
+}
+.project-CC2:hover {
+    box-shadow: inset 0 0 10px white;
 }
 
 .project-TG1 {
@@ -685,12 +765,19 @@ p {
 .project-TG2 {
     width: 60px;
     height: 60px;
-    vertical-align: middle;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    z-index: 10;
+    /* vertical-align: middle; */
     background-image: url("../../images/trivia.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
 
+}
+.project-TG2:hover {
+    box-shadow: inset 0 0 10px white;
 }
 
 .project-FF1 {
@@ -698,12 +785,14 @@ p {
     height: 100%;
     vertical-align: middle;
     background-image: url("../../images/friendships3.jpg");
+    opacity: .85;
     background-color: dimgray;
     background-blend-mode: overlay;
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
-    color: white;
+    color: black;
+    line-height: 15px;
 }
 
 
@@ -716,7 +805,165 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    z-index: 10;
 
+}
+.project-FF2:hover {
+    box-shadow: inset 0 0 10px black;
+}
+
+.project-BAM1 {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    background-image: url("../../images/ScreenShotBB.png");
+    background-color: dimgray;
+    background-blend-mode: overlay;
+    
+    /*background-size: cover;
+    background-repeat: no-repeat;*/
+    margin: auto;
+    color: white;
+    line-height: 15px;
+}
+
+
+
+.project-BAM2 {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    background-image: url("../../images/ScreenShotB.png");
+    /*background-color:;
+    background-blend-mode: overlay;
+    background-size: cover;*/
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    z-index: 10;
+
+}
+.project-BAM2:hover {
+    box-shadow: inset 0 0 10px white;
+}
+
+.project-BUR1 {
+    /*width: 100%;*/
+    height: 100%;
+    vertical-align: middle;
+    background-image: url("../../images/burger.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: auto;
+    color: white;
+
+}
+
+
+
+.project-BUR2 {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    background-image: url("../../images/burg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    z-index: 10;
+
+}
+.project-BUR2:hover {
+    box-shadow: inset 0 0 10px white;
+}
+
+.project-SCR1 {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    vertical-align: middle;
+    background-image: url("../../images/anglenews2copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    margin: auto;
+    color: black;
+    /* height:100%;  */
+    /* width:auto;  */
+}
+
+
+
+.project-SCR2 {
+    width: 60px;
+    height: 60px;
+    /* vertical-align: middle; */
+    background-image: url("../../images/nhlcopy.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    z-index: 10;
+
+}
+.project-SCR2:hover {
+    box-shadow: inset 0 0 10px black;
+}
+
+.project-CLICK1 {
+    /* width: 100%; */
+    height: 100%;
+    vertical-align: middle;
+    background-image: url("../../images/rink2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    margin: auto;
+    color: black;
+    /* opacity: .95; */
+    background-color: dimgray;
+    background-blend-mode: overlay;
+    
+}
+
+
+
+.project-CLICK2 {
+    width: 60px;
+    height: 60px;
+    /* vertical-align: middle; */
+    background-image: url("../../images/tavares.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    z-index: 10;
+
+}
+.project-CLICK2:hover {
+    box-shadow: inset 0 0 10px black;
+}
+
+.project-contact {
+    height: 100%;
+    vertical-align: middle;
+    margin: auto;
+    color: white;
+    /* opacity: .95; */
+    background-color: rgb(30, 30, 30);
+   
+}
+
+.contact-form {
+    colour: white;
 }
 
 
@@ -764,4 +1011,6 @@ p {
     overflow: hidden;
     box-sizing: border-box;
   }
+
+
 

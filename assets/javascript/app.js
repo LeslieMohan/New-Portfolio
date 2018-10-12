@@ -39,15 +39,15 @@ $(window).scroll(function() {
     }
 
     else if (wScroll >= 351 && wScroll <= 1063) {
-        setTimeout(function(){
+        /*setTimeout(function(){
             $('#bio-image').fadeIn();
-        }), 300;
+        }), 300;*/
         $('#about').show();
         $('#home').hide();
         $('#projects').hide();
     
     } else if (wScroll >= 1063) {
-        $('#bio-image').fadeOut();
+        // $('#bio-image').fadeOut();
         $('#about').hide();
         $('#home').hide();
         $('#projects').show();
@@ -72,6 +72,9 @@ $(window).scroll(function() {
             }), 180
             
         };
+
+
+        
 
 
     
